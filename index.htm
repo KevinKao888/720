@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<meta property="og:title" content="TEST" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="3dspace/thumb/001.jpg" />
+	<style>
+		@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow: hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+		a{ color:#AAAAAA; text-decoration:underline; }
+		a:hover{ color:#FFFFFF; text-decoration:underline; }
+	</style>
+</head>
+<body>
+	<div id="Space1" style="width:100%;height:100%;">
+		<noscript><table style="width:100%;height:100%;"><tr style="valign:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript></div>
+		<script src="3dspace/javascript/3dspace.js"></script>
+		<script src="3dspace/javascript/userdefine.js"></script>
+		<script>
+			var ShowClear = getUrlParameter("clear");
+			if (typeof ShowClear === "undefined") ShowClear = "false";
+			var vars = {};
+			vars["HtmlStart"] = "Y";
+			vars["ShowClear"] = ShowClear;
+			embedpano({target:"Space1", html5:"prefer", initvars:vars});
+		</script>
+	</div>
+</body>
+</html>

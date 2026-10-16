@@ -1,0 +1,18 @@
+<!-- 3D Space Publisher @Copyright www.3dspace.com.tw -->
+<krpano version="1.19">
+<action name="load_project">
+	version_update();
+	set(keep_view, True);
+	set_pano("001", "000", "", 0, 0, 0, "PanoLoadDefault();", "", "", "0", "0", "80", "");
+	set_pano("002", "000", "", 0, 0, 0, "PanoLoadDefault();", "", "", "0", "0", "80", "");
+	set_hotspot("01", "gif");
+	add_help("3D Space 空間導覽系統");
+	set(ProjectTitle, "TEST");
+	set(DefaultFlagColor, "FFF684");
+	set(control.bouncinglimits, false);
+</action>
+<action name="load_plugin">
+	set(HotspotZoom, false);
+	load_title("");
+</action>
+</krpano>

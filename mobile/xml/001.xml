@@ -1,0 +1,20 @@
+<!-- 3D Space Publisher @Copyright www.3dspace.com.tw -->
+<krpano version="1.19">
+<preview url="../../3dspace/preview/001.jpg"/>
+<image type="cube" multires="true" tilesize="1024" progressive="false">
+	<level tiledimagewidth="2546" tiledimageheight="2546">
+		<cube url="../../3dspace/pano/001/%s_2_%0v_%0h.jpg"/>
+	</level>
+	<level tiledimagewidth="1273" tiledimageheight="1273">
+		<cube url="../../3dspace/pano/001/%s_1_%0v_%0h.jpg"/>
+	</level>
+</image>
+<display movequality="high" stillquality="highsharp" details="25"/>
+<events onxmlcomplete="action(add_all_001)"/>
+<action name="add_all_001">
+	add_logo(0, 0);
+	view_setpan(-180, 180);
+	view_settilt(-90, 90);
+	view_setfov(55, 100);
+</action>
+</krpano>
